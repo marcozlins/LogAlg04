@@ -44,22 +44,32 @@
 
     <script>
         // Inicia o cálculo da idade ao clicar no botão.
-        calc.onclick = function () {
+        calc.onclick = function idade () {
+
+            var idade = yold.value.split(`_`)
+            
+        
+            
+            var p = birth.value.split(`_`)
+            
+            console.log(p);
             
 
             // Partes da data de nascimento
-            var nasc = birth.value.split('-');
+            var nasc = birth.value.split('-')
+            
+            console.log(nasc);
 
             
 
             // Partes da data atual
-            var h = new Date();
+            var hoje = new Date
+            var ano = hoje.getFullYear
+            var mes = hoje.getMonth+1
+            var dia = hoje.getDate
 
-            var hoje = [
-                h.getFullYear(),
-                h.getMonth() + 1,
-                h.getDate()
-            ];
+           
+           
 
             console.log(nasc); // Data de nascimento
             console.log(hoje); // Data atual
